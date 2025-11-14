@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex justify-center">
+    <div class="bg-yellow-400 h-10 w-300 fixed rounded-full top-5 border-4 border-black active:scale-102">
+      <nav class=" h-10 w-full flex justify-center items-center">
+         <h1 class="text-sky-700 font-extrabold">Whether App....</h1>
+      </nav>
+    </div>
+    </header>
+    <main>
+        <section class="h-180 w-auto flex justify-center items-center bg-[url('https://images6.alphacoders.com/122/1220288.jpg')]">
+             <div id="card" class="h-95 w-145 rounded-md bg-transparent shadow-2xl shadow-black border-2 border-black bg-cover bg-[url('https://static.vecteezy.com/system/resources/thumbnails/037/134/456/small/sky-blue-cloud-background-horizon-spring-clear-sky-in-morning-by-the-beach-beautiful-landscape-nature-sunrise-in-summer-backdrop-panoramic-banner-white-soft-fluffy-clouds-vector.jpg')]">
+                <div id="div1" class="h-[60%] w-full flex justify-center items-center flex-col gap-4">
+                <select name="city" id="select1" class="px-30 py-4 rounded-md text-white font-bold bg-black">
+                    <option value="0" class="bg-black">Select city</option>
+                    <option value="1" class="bg-black">Karachi</option>
+                    <option value="2" class="bg-black">Lahore</option>
+                    <option value="3" class="bg-black">Islamabad</option>
+                    <option value="4" class="bg-black">Peshawar</option>
+                    <option value="5" class="bg-black">Quetta</option>
+                </select>
+                <select name="" id="select2" class="px-29 py-4 rounded-md text-white font-bold bg-black">
+                 <option value="0" class="bg-black">Select Date</option>
+                 <option value="1" class="bg-black">1-11-2025</option>
+                 <option value="2" class="bg-black">2-11-2025</option>
+                 <option value="3" class="bg-black">3-11-2025</option>
+                 <option value="4" class="bg-black">4-11-2025</option>
+                 <option value="5" class="bg-black">5-11-2025</option>
+                 <option value="6" class="bg-black">6-11-2025</option>
+                 <option value="7" class="bg-black">7-11-2025</option>
+                 <option value="8" class="bg-black">8-11-2025</option>
+                 <option value="9" class="bg-black">9-11-2025</option>
+                 <option value="10" class="bg-black">10-11-2025</option>
+                 <option value="11" class="bg-black">11-11-2025</option>
+                 <option value="12" class="bg-black">12-11-2025</option>
+                 <option value="13" class="bg-black">13-11-2025</option>
+                 <option value="14" class="bg-black">14-11-2025</option>
+                 <option value="15" class="bg-black">15-11-2025</option>
+                 <option value="16" class="bg-black">16-11-2025</option>
+                 <option value="17" class="bg-black">17-11-2025</option>
+                 <option value="18" class="bg-black">18-11-2025</option>
+                 <option value="19" class="bg-black">19-11-2025</option>
+                 <option value="20" class="bg-black">20-11-2025</option>
+                 <option value="21" class="bg-black">21-11-2025</option>
+                 <option value="22" class="bg-black">22-11-2025</option>
+                 <option value="23" class="bg-black">23-11-2025</option>
+                 <option value="24" class="bg-black">24-11-2025</option>
+                 <option value="25" class="bg-black">25-11-2025</option>
+                 <option value="26" class="bg-black">26-11-2025</option>
+                 <option value="27" class="bg-black">27-11-2025</option>
+                 <option value="28" class="bg-black">28-11-2025</option>
+                 <option value="29" class="bg-black">29-11-2025</option>
+                 <option value="30" class="bg-black">30-11-2025</option>
+                </select>
+                </div>
+                <hr>
+                <div id="div2" class="h-[40%] w-full flex justify-center items-center"> 
+                  <button id="btn1"
+                    class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-20 py-4 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20"
+                  >
+                     Check Whether 🌦️</span>
+                    <div
+                      class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+                    >
+                      <div class="relative h-full w-10 bg-white/20"></div>
+                    </div>
+                  </button>
+                  </div>
+                </div>
+              </div>
+             </div>
+        </section>
+    </main>    
+    <footer id="fter" class="h-30 w-full bg-yellow-400 flex justify-center items-center flex-col gap-2">
+        <p>This website uses cookies to improve your experience. If you continue to browse this site, you are agreeing to our Privacy Policy and Terms of Use.</p>
+        <button id="btn2" class="bg-sky-400 px-5 py-2 rounded-md text-white hover:bg-sky-600">Ok! Close</button>
+    </footer>
+    <script>
+        const khidata = [
+    { date: "01-11-2025", report: "Sunny", city: "Karachi", humidity: "65%" },
+    { date: "02-11-2025", report: "Cloudy", city: "Karachi", humidity: "70%" },
+    { date: "03-11-2025", report: "Rainy", city: "Karachi", humidity: "80%" },
+    { date: "04-11-2025", report: "Windy", city: "Karachi", humidity: "60%" },
+    { date: "05-11-2025", report: "Humid", city: "Karachi", humidity: "85%" },
+    { date: "06-11-2025", report: "Sunny", city: "Karachi", humidity: "68%" },
+    { date: "07-11-2025", report: "Cloudy", city: "Karachi", humidity: "72%" },
+    { date: "08-11-2025", report: "Rainy", city: "Karachi", humidity: "78%" },
+    { date: "09-11-2025", report: "Windy", city: "Karachi", humidity: "62%" },
+    { date: "10-11-2025", report: "Humid", city: "Karachi", humidity: "88%" },
+    { date: "11-11-2025", report: "Sunny", city: "Karachi", humidity: "64%" },
+    { date: "12-11-2025", report: "Cloudy", city: "Karachi", humidity: "69%" },
+    { date: "13-11-2025", report: "Rainy", city: "Karachi", humidity: "75%" },
+    { date: "14-11-2025", report: "Windy", city: "Karachi", humidity: "59%" },
+    { date: "15-11-2025", report: "Humid", city: "Karachi", humidity: "82%" },
+    { date: "16-11-2025", report: "Sunny", city: "Karachi", humidity: "67%" },
+    { date: "17-11-2025", report: "Cloudy", city: "Karachi", humidity: "71%" },
+    { date: "18-11-2025", report: "Rainy", city: "Karachi", humidity: "79%" },
+    { date: "19-11-2025", report: "Windy", city: "Karachi", humidity: "63%" },
+    { date: "20-11-2025", report: "Humid", city: "Karachi", humidity: "84%" },
+    { date: "21-11-2025", report: "Sunny", city: "Karachi", humidity: "66%" },
+    { date: "22-11-2025", report: "Cloudy", city: "Karachi", humidity: "73%" },
+    { date: "23-11-2025", report: "Rainy", city: "Karachi", humidity: "77%" },
+    { date: "24-11-2025", report: "Windy", city: "Karachi", humidity: "61%" },
+    { date: "25-11-2025", report: "Humid", city: "Karachi", humidity: "86%" },
+    { date: "26-11-2025", report: "Sunny", city: "Karachi", humidity: "65%" },
+    { date: "27-11-2025", report: "Cloudy", city: "Karachi", humidity: "70%" },
+    { date: "28-11-2025", report: "Rainy", city: "Karachi", humidity: "76%" },
+    { date: "29-11-2025", report: "Windy", city: "Karachi", humidity: "64%" },
+    { date: "30-11-2025", report: "Humid", city: "Karachi", humidity: "83%" }
+  ];
+  
+  const isldata = [
+    { date: "01-11-2025", report: "Sunny", city: "Islamabad", humidity: "55%" },
+    { date: "02-11-2025", report: "Cloudy", city: "Islamabad", humidity: "60%" },
+    { date: "03-11-2025", report: "Rainy", city: "Islamabad", humidity: "75%" },
+    { date: "04-11-2025", report: "Windy", city: "Islamabad", humidity: "50%" },
+    { date: "05-11-2025", report: "Humid", city: "Islamabad", humidity: "68%" },
+    { date: "06-11-2025", report: "Sunny", city: "Islamabad", humidity: "58%" },
+    { date: "07-11-2025", report: "Cloudy", city: "Islamabad", humidity: "63%" },
+    { date: "08-11-2025", report: "Rainy", city: "Islamabad", humidity: "72%" },
+    { date: "09-11-2025", report: "Windy", city: "Islamabad", humidity: "52%" },
+    { date: "10-11-2025", report: "Humid", city: "Islamabad", humidity: "70%" },
+    { date: "11-11-2025", report: "Sunny", city: "Islamabad", humidity: "56%" },
+    { date: "12-11-2025", report: "Cloudy", city: "Islamabad", humidity: "62%" },
+    { date: "13-11-2025", report: "Rainy", city: "Islamabad", humidity: "74%" },
+    { date: "14-11-2025", report: "Windy", city: "Islamabad", humidity: "49%" },
+    { date: "15-11-2025", report: "Humid", city: "Islamabad", humidity: "69%" },
+    { date: "16-11-2025", report: "Sunny", city: "Islamabad", humidity: "57%" },
+    { date: "17-11-2025", report: "Cloudy", city: "Islamabad", humidity: "61%" },
+    { date: "18-11-2025", report: "Rainy", city: "Islamabad", humidity: "73%" },
+    { date: "19-11-2025", report: "Windy", city: "Islamabad", humidity: "53%" },
+    { date: "20-11-2025", report: "Humid", city: "Islamabad", humidity: "67%" },
+    { date: "21-11-2025", report: "Sunny", city: "Islamabad", humidity: "55%" },
+    { date: "22-11-2025", report: "Cloudy", city: "Islamabad", humidity: "64%" },
+    { date: "23-11-2025", report: "Rainy", city: "Islamabad", humidity: "71%" },
+    { date: "24-11-2025", report: "Windy", city: "Islamabad", humidity: "51%" },
+    { date: "25-11-2025", report: "Humid", city: "Islamabad", humidity: "66%" },
+    { date: "26-11-2025", report: "Sunny", city: "Islamabad", humidity: "58%" },
+    { date: "27-11-2025", report: "Cloudy", city: "Islamabad", humidity: "63%" },
+    { date: "28-11-2025", report: "Rainy", city: "Islamabad", humidity: "74%" },
+    { date: "29-11-2025", report: "Windy", city: "Islamabad", humidity: "54%" },
+    { date: "30-11-2025", report: "Humid", city: "Islamabad", humidity: "68%" }
+  ];
+  const lhrdata = [
+    { date: "01-11-2025", report: "Sunny", city: "Lahore", humidity: "60%" },
+    { date: "02-11-2025", report: "Cloudy", city: "Lahore", humidity: "65%" },
+    { date: "03-11-2025", report: "Rainy", city: "Lahore", humidity: "78%" },
+    { date: "04-11-2025", report: "Windy", city: "Lahore", humidity: "55%" },
+    { date: "05-11-2025", report: "Humid", city: "Lahore", humidity: "72%" },
+    { date: "06-11-2025", report: "Sunny", city: "Lahore", humidity: "63%" },
+    { date: "07-11-2025", report: "Cloudy", city: "Lahore", humidity: "67%" },
+    { date: "08-11-2025", report: "Rainy", city: "Lahore", humidity: "75%" },
+    { date: "09-11-2025", report: "Windy", city: "Lahore", humidity: "58%" },
+    { date: "10-11-2025", report: "Humid", city: "Lahore", humidity: "74%" },
+    { date: "11-11-2025", report: "Sunny", city: "Lahore", humidity: "62%" },
+    { date: "12-11-2025", report: "Cloudy", city: "Lahore", humidity: "68%" },
+    { date: "13-11-2025", report: "Rainy", city: "Lahore", humidity: "77%" },
+    { date: "14-11-2025", report: "Windy", city: "Lahore", humidity: "57%" },
+    { date: "15-11-2025", report: "Humid", city: "Lahore", humidity: "73%" },
+    { date: "16-11-2025", report: "Sunny", city: "Lahore", humidity: "61%" },
+    { date: "17-11-2025", report: "Cloudy", city: "Lahore", humidity: "66%" },
+    { date: "18-11-2025", report: "Rainy", city: "Lahore", humidity: "79%" },
+    { date: "19-11-2025", report: "Windy", city: "Lahore", humidity: "56%" },
+    { date: "20-11-2025", report: "Humid", city: "Lahore", humidity: "70%" },
+    { date: "21-11-2025", report: "Sunny", city: "Lahore", humidity: "64%" },
+    { date: "22-11-2025", report: "Cloudy", city: "Lahore", humidity: "69%" },
+    { date: "23-11-2025", report: "Rainy", city: "Lahore", humidity: "76%" },
+    { date: "24-11-2025", report: "Windy", city: "Lahore", humidity: "59%" },
+    { date: "25-11-2025", report: "Humid", city: "Lahore", humidity: "71%" },
+    { date: "26-11-2025", report: "Sunny", city: "Lahore", humidity: "63%" },
+    { date: "27-11-2025", report: "Cloudy", city: "Lahore", humidity: "67%" },
+    { date: "28-11-2025", report: "Rainy", city: "Lahore", humidity: "74%" },
+    { date: "29-11-2025", report: "Windy", city: "Lahore", humidity: "60%" },
+    { date: "30-11-2025", report: "Humid", city: "Lahore", humidity: "72%" }
+  ];
+  const pesdata = [
+    { date: "01-11-2025", report: "Sunny", city: "Peshawar", humidity: "52%" },
+    { date: "02-11-2025", report: "Cloudy", city: "Peshawar", humidity: "58%" },
+    { date: "03-11-2025", report: "Rainy", city: "Peshawar", humidity: "70%" },
+    { date: "04-11-2025", report: "Windy", city: "Peshawar", humidity: "49%" },
+    { date: "05-11-2025", report: "Humid", city: "Peshawar", humidity: "65%" },
+    { date: "06-11-2025", report: "Sunny", city: "Peshawar", humidity: "54%" },
+    { date: "07-11-2025", report: "Cloudy", city: "Peshawar", humidity: "60%" },
+    { date: "08-11-2025", report: "Rainy", city: "Peshawar", humidity: "69%" },
+    { date: "09-11-2025", report: "Windy", city: "Peshawar", humidity: "51%" },
+    { date: "10-11-2025", report: "Humid", city: "Peshawar", humidity: "64%" },
+    { date: "11-11-2025", report: "Sunny", city: "Peshawar", humidity: "53%" },
+    { date: "12-11-2025", report: "Cloudy", city: "Peshawar", humidity: "59%" },
+    { date: "13-11-2025", report: "Rainy", city: "Peshawar", humidity: "68%" },
+    { date: "14-11-2025", report: "Windy", city: "Peshawar", humidity: "50%" },
+    { date: "15-11-2025", report: "Humid", city: "Peshawar", humidity: "63%" },
+    { date: "16-11-2025", report: "Sunny", city: "Peshawar", humidity: "55%" },
+    { date: "17-11-2025", report: "Cloudy", city: "Peshawar", humidity: "61%" },
+    { date: "18-11-2025", report: "Rainy", city: "Peshawar", humidity: "67%" },
+    { date: "19-11-2025", report: "Windy", city: "Peshawar", humidity: "52%" },
+    { date: "20-11-2025", report: "Humid", city: "Peshawar", humidity: "66%" },
+    { date: "21-11-2025", report: "Sunny", city: "Peshawar", humidity: "54%" },
+    { date: "22-11-2025", report: "Cloudy", city: "Peshawar", humidity: "60%" },
+    { date: "23-11-2025", report: "Rainy", city: "Peshawar", humidity: "71%" },
+    { date: "24-11-2025", report: "Windy", city: "Peshawar", humidity: "50%" },
+    { date: "25-11-2025", report: "Humid", city: "Peshawar", humidity: "64%" },
+    { date: "26-11-2025", report: "Sunny", city: "Peshawar", humidity: "53%" },
+    { date: "27-11-2025", report: "Cloudy", city: "Peshawar", humidity: "59%" },
+    { date: "28-11-2025", report: "Rainy", city: "Peshawar", humidity: "69%" },
+    { date: "29-11-2025", report: "Windy", city: "Peshawar", humidity: "51%" },
+    { date: "30-11-2025", report: "Humid", city: "Peshawar", humidity: "65%" }
+  ];
+  const quedata = [
+    { date: "01-11-2025", report: "Sunny", city: "Quetta", humidity: "40%" },
+    { date: "02-11-2025", report: "Cloudy", city: "Quetta", humidity: "45%" },
+    { date: "03-11-2025", report: "Rainy", city: "Quetta", humidity: "55%" },
+    { date: "04-11-2025", report: "Windy", city: "Quetta", humidity: "38%" },
+    { date: "05-11-2025", report: "Humid", city: "Quetta", humidity: "50%" },
+    { date: "06-11-2025", report: "Sunny", city: "Quetta", humidity: "42%" },
+    { date: "07-11-2025", report: "Cloudy", city: "Quetta", humidity: "47%" },
+    { date: "08-11-2025", report: "Rainy", city: "Quetta", humidity: "53%" },
+    { date: "09-11-2025", report: "Windy", city: "Quetta", humidity: "39%" },
+    { date: "10-11-2025", report: "Humid", city: "Quetta", humidity: "49%" },
+    { date: "11-11-2025", report: "Sunny", city: "Quetta", humidity: "41%" },
+    { date: "12-11-2025", report: "Cloudy", city: "Quetta", humidity: "46%" },
+    { date: "13-11-2025", report: "Rainy", city: "Quetta", humidity: "54%" },
+    { date: "14-11-2025", report: "Windy", city: "Quetta", humidity: "37%" },
+    { date: "15-11-2025", report: "Humid", city: "Quetta", humidity: "51%" },
+    { date: "16-11-2025", report: "Sunny", city: "Quetta", humidity: "43%" },
+    { date: "17-11-2025", report: "Cloudy", city: "Quetta", humidity: "48%" },
+    { date: "18-11-2025", report: "Rainy", city: "Quetta", humidity: "56%" },
+    { date: "19-11-2025", report: "Windy", city: "Quetta", humidity: "39%" },
+    { date: "20-11-2025", report: "Humid", city: "Quetta", humidity: "52%" },
+    { date: "21-11-2025", report: "Sunny", city: "Quetta", humidity: "44%" },
+    { date: "22-11-2025", report: "Cloudy", city: "Quetta", humidity: "47%" },
+    { date: "23-11-2025", report: "Rainy", city: "Quetta", humidity: "55%" },
+    { date: "24-11-2025", report: "Windy", city: "Quetta", humidity: "38%" },
+    { date: "25-11-2025", report: "Humid", city: "Quetta", humidity: "50%" },
+    { date: "26-11-2025", report: "Sunny", city: "Quetta", humidity: "42%" },
+    { date: "27-11-2025", report: "Cloudy", city: "Quetta", humidity: "46%" },
+    { date: "28-11-2025", report: "Rainy", city: "Quetta", humidity: "54%" },
+    { date: "29-11-2025", report: "Windy", city: "Quetta", humidity: "39%" },
+    { date: "30-11-2025", report: "Humid", city: "Quetta", humidity: "49%" }
+  ];
+  
+        document.querySelector("#btn2").addEventListener('click',()=>{
+            document.querySelector("#fter").style.display = 'none'
+        })
+
+        const select1 = document.querySelector('#select1')
+        const select2 = document.querySelector('#select2')
+
+        const selectvalue1 = select1.value
+        const selectvalue2 = select2.value
+
+        document.querySelector('#btn1').addEventListener('click',()=>{
+
+            let newdiv = document.createElement('div')
+            if(select1.value == 0){
+              alert('First select the city')
+            }
+            else if(select1.value == 1){
+                          document.querySelector('#div1').style.display = 'none'
+            document.querySelector('#div2').style.display = 'none'
+            newdiv.innerHTML = `<div style="
+                      width: 400px;
+                      margin: 40px auto;
+                      padding: 20px;
+                      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+                      color: white;
+                      font-family: 'Segoe UI', sans-serif;
+                      border-radius: 15px;
+                      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                      text-align: center;
+                      transition: transform 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                    >
+                      <h2 style="margin: 0; font-size: 24px;"> Karachi </h2>
+                      <p style="margin: 8px 0; font-size: 16px;">Date: <strong> ${khidata[0].date}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Humidity: <strong> ${khidata[0].humidity}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Weather Report: <strong> ${khidata[0].report} </strong></p>
+                    </div>
+                    `
+                    document.querySelector('#card').appendChild(newdiv)   
+                  }
+                  else if(select1.value == 2){
+                                document.querySelector('#div1').style.display = 'none'
+            document.querySelector('#div2').style.display = 'none'
+                    newdiv.innerHTML = `<div style="
+                      width: 400px;
+                      margin: 40px auto;
+                      padding: 20px;
+                      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+                      color: white;
+                      font-family: 'Segoe UI', sans-serif;
+                      border-radius: 15px;
+                      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                      text-align: center;
+                      transition: transform 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                    >
+                      <h2 style="margin: 0; font-size: 24px;"> Lahore </h2>
+                      <p style="margin: 8px 0; font-size: 16px;">Date: <strong> ${lhrdata[0].date}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Humidity: <strong> ${lhrdata[0].humidity} </strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Weather Report: <strong> ${lhrdata[0].report} </strong></p>
+                    </div>
+                    `
+                    document.querySelector('#card').appendChild(newdiv)   
+                  }                 
+                  else if(select1.value == 3){
+                                document.querySelector('#div1').style.display = 'none'
+            document.querySelector('#div2').style.display = 'none'
+                    newdiv.innerHTML = `<div style="
+                      width: 400px;
+                      margin: 40px auto;
+                      padding: 20px;
+                      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+                      color: white;
+                      font-family: 'Segoe UI', sans-serif;
+                      border-radius: 15px;
+                      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                      text-align: center;
+                      transition: transform 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                    >
+                      <h2 style="margin: 0; font-size: 24px;"> ${isldata[0].date}</h3>
+                      <p style="margin: 8px 0; font-size: 16px;">Date: <strong> ${isldata[0].date}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Humidity: <strong> ${isldata[0].humidity}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Weather Report:<strong> ${isldata[0].report}</strong></p>
+                    </div>
+                    `
+                    document.querySelector('#card').appendChild(newdiv)   
+                  }                 
+                  else if(select1.value == 4){
+                                document.querySelector('#div1').style.display = 'none'
+            document.querySelector('#div2').style.display = 'none'
+                    newdiv.innerHTML = `<div style="
+                      width: 400px;
+                      margin: 40px auto;
+                      padding: 20px;
+                      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+                      color: white;
+                      font-family: 'Segoe UI', sans-serif;
+                      border-radius: 15px;
+                      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                      text-align: center;
+                      transition: transform 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                    >
+                      <h2 style="margin: 0; font-size: 24px;"> ${pesdata[0].date}</h4>
+                      <p style="margin: 8px 0; font-size: 16px;">Date: <strong> ${pesdata[0].date}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Humidity: <strong> ${pesdata[0].humidity} </strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Weather Report: <strong> ${pesdata[0].report} </strong></p>
+                    </div>
+                    `
+                    document.querySelector('#card').appendChild(newdiv)   
+                  }                 
+                  else if(select1.value == 5){
+                                document.querySelector('#div1').style.display = 'none'
+            document.querySelector('#div2').style.display = 'none'
+                    newdiv.innerHTML = `<div style="
+                      width: 400px;
+                      margin: 40px auto;
+                      padding: 20px;
+                      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+                      color: white;
+                      font-family: 'Segoe UI', sans-serif;
+                      border-radius: 15px;
+                      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                      text-align: center;
+                      transition: transform 0.3s ease;
+                      cursor: pointer;
+                    "
+                    onmouseover="this.style.transform='scale(1.05)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                    >
+                      <h2 style="margin: 0; font-size: 24px;"> ${quedata[0].date}</h5>
+                      <p style="margin: 8px 0; font-size: 16px;">Date: <strong> ${quedata[0].date}</strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Humidity: <strong> ${quedata[0].humidity} </strong></p>
+                      <p style="margin: 8px 0; font-size: 16px;">Weather Report: <strong> ${quedata[0].report} </strong></p>
+                    </div>
+                    `
+                    document.querySelector('#card').appendChild(newdiv)   
+                  }                 
+        })
+    </script>
+</body>
+</html>
